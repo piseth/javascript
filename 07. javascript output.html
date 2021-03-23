@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfunc1(){
+            document.getElementById('root').innerHTML = "test1";
+        }
+        function myfunc2(){
+            alert('test2');
+        }
+        function myfunc3(){
+            console.log('test3');
+        }
+        function myfunc4(){
+            document.write("test4");
+        }
+    </script>
+</head>
+<body>
+    <div id="root">HELLO</div>
+    <button onclick="myfunc1()">Button 1</button>
+    <button onclick="myfunc2()">Button 2</button>
+    <button onclick="myfunc3()">Button 3</button>
+    <button onclick="myfunc4()">Button 4</button>
+    <button onclick="window.print()">Print this page</button>
+</body>
+</html>

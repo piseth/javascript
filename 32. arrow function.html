@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alert(hello1())">Hello1</button>
+    <button onclick="alert(hello2())">Hello2</button>
+    <button onclick="alert(hello3())">Hello3</button>
+    <button onclick="alert(hello4('piseth','sok'))">Hello4</button>
+    <button onclick="alert(hello5('piseth'))">Hello5</button>
+    <script>
+        var hello1 = function(){
+            return "Hello JavaScript1";
+        }
+        var hello2 = ()=> {
+            return "Hello JavaScript2";
+        }
+        var hello3 = ()=> "Hello JavaScript3";
+
+        var hello4 = (fname,lname)=> {
+            return "Hello " + lname + " " + fname;
+        }
+        var hello5 = username => {
+            return "Hello " + username;
+        }
+    </script>
+</body>
+</html>

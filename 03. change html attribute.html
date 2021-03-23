@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myTest(){
+            document.getElementById('test').setAttribute('src',"http://placekitten.com/300/200");
+        }
+
+        function myHide() {
+            document.getElementById('test').style.display = "none";
+        }
+
+        function myShow() {
+            document.getElementById('test').style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <img id="test" src="http://placekitten.com/200/100" alt="">
+
+    <button onclick="myTest()">Change</button>
+    <button onclick="myHide()">Hide</button>
+    <button onclick="myShow()">Show</button>
+</body>
+</html>

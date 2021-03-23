@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student {
+            // 1. property = noun
+            firstname = "";
+            lastname = "";
+            address = "";
+            age = 0;
+            score1 = 0;
+            score2 = 0;
+            score3 = 0;
+            // 2. method = verb
+            getName(){
+                return this.firstname;
+            }
+            passExam() {
+                return "Passed";
+            }
+            getAverage(){
+                var average = (this.score1 +this.score2 +this.score3)/3;
+                return average;
+            }
+            // 3. constructor = special method
+            constructor (fname, lname) {
+                this.firstname = fname;
+                this.lastname = lname;
+            }
+        }
+        var student1 = new Student("long","sopheak");
+        var student2 = new Student("kat","dara");
+        student1.score1 = 90;
+        student1.score2 = 80;
+        student1.score3 = 70;
+        student1.age = 22;
+        student2.age = 23;
+
+        console.log(student1.firstname);
+        console.log(student2.getName());
+        console.log(student1.passExam());
+        console.log(student1.getAverage());
+    </script>
+</body>
+</html>
